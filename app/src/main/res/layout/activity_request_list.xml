@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.RequestListActivity">
+    <TextView
+        android:layout_marginTop="61dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textColor="#7d6baf"
+        android:letterSpacing="-0.03"
+        android:text="자녀의 승인 요청 내역"
+        />
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#fcd108"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/rv_request_list"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </android.support.v7.widget.RecyclerView>
+</FrameLayout>

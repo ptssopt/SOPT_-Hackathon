@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activity.AddMissionActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="166dp"
+    android:background="#fcd108"
+    android:layout_height="match_parent">
+</LinearLayout>
+    <ImageView
+        android:id="@+id/iv_add_mission_mission_image"
+        android:layout_marginTop="47dp"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="28dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_img_add"/>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="47dp"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:layout_width="433dp"
+        android:layout_height="280dp">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:textSize="15sp"
+            android:textColor="#7358a5"
+            android:letterSpacing="-0.04"
+            android:text="미션명"
+            />
+        <TextView
+            android:id="@+id/tv_add_mission_mission_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:textColor="#444444"
+            android:letterSpacing="-0.03"
+            android:text="일주일간 일기 꼬박꼬박 쓰기!"
+            />
+        <TextView
+            android:layout_marginTop="44dp"
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:textSize="15sp"
+            android:textColor="#7358a5"
+            android:letterSpacing="-0.04"
+            android:text="리워드"
+            />
+        <EditText
+            android:id="@+id/edt_add_mission_reword"
+            android:layout_width="255dp"
+            android:layout_height="45dp"
+            android:textSize="17sp"
+            android:imeOptions="flagNoExtractUi"
+            android:textColor="#afafaf"
+            android:hint="리워드를 입력하세요"/>
+        <TextView
+            android:layout_marginTop="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#7358a5"
+            android:letterSpacing="-0.04"
+            tools:text="미션 달성 횟수"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<Spinner
+    android:id="@+id/sp_add_mission_spinner"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:entries="@array/count">
+</Spinner>
+            <ImageView
+                android:id="@+id/iv_add_mission_comfirm"
+                android:layout_marginLeft="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_accept"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

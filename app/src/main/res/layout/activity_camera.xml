@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7358a5"
+    android:orientation="vertical"
+    tools:context=".Activity.CameraActivity">
+    <TextView
+       android:layout_marginBottom="80dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textColor="#fcd108"
+        android:text="미션을 인증해주세요!"
+        />
+    <ImageView
+        android:layout_marginLeft="130dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/iv_camera_iv"
+        android:layout_width="550dp"
+        android:layout_height="238dp"
+        android:src="@drawable/camera"/>
+    <ImageView
+        android:id="@+id/oval"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/oval"/>
+    <ImageView
+        android:id="@+id/ovalcopy"
+        android:layout_gravity="right"
+        android:src="@drawable/oval_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_finish"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_width="232dp"
+        android:layout_height="231dp"
+        android:src="@drawable/giftbox"/>
+</FrameLayout>

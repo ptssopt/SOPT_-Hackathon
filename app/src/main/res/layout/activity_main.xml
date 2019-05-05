@@ -1,19 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".Activity.MainActivity">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7358a5"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+    <EditText
+        android:layout_alignParentLeft="true"
+        android:id="@+id/edt_main_mission_contents"
+        android:textColorHint="#ffea8a"
+        android:imeOptions="flagNoExtractUi"
+        android:textStyle="bold"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:theme="@style/EditTheme"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:textColor="#ffea8a"
+        android:letterSpacing="-0.04"
+        android:hint="자녀가 수행할 미션을 작성해주세요!"
+        />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="160dp"
+        android:id="@+id/iv_main_next"
+        android:layout_marginTop="135dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/path_2"/>
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/giftbox"
+        android:layout_width="120dp"
+        android:layout_height="157dp" />
+</RelativeLayout>
