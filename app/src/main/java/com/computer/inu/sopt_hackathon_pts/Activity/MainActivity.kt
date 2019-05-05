@@ -1,7 +1,8 @@
-package com.computer.inu.sopt_hackathon_pts
+package com.computer.inu.sopt_hackathon_pts.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.computer.inu.sopt_hackathon_pts.R
 
 class MainActivity : AppCompatActivity() {
 

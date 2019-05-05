@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.computer.inu.sopt_hackathon_pts">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -10,10 +10,10 @@
             android:screenOrientation="landscape"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity android:name=".Activity.MainActivity"
                   android:screenOrientation="landscape">
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity android:name=".Activity.LoginActivity"
                   android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
